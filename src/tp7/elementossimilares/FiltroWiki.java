@@ -1,11 +1,10 @@
-package unq.tp7.punto3;
+package tp7.elementossimilares;
 
 import java.util.List;
 
-public abstract class Filtro {
+public abstract class FiltroWiki {
 	
-	public Filtro() {}
+	public FiltroWiki() {}
 	
 	public abstract List<WikipediaPage> getSimilarPages(WikipediaPage page, List<WikipediaPage> wikipedia);
 }
-
