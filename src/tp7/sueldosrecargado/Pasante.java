@@ -20,6 +20,5 @@ public class Pasante extends Empleado {
 		return this.horasTrabajadas;
 	}
 	
-	/** Probando el repo */
 	
 }
