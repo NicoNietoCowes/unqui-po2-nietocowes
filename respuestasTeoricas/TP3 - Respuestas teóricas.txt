@@ -1,0 +1,9 @@
+Ejercicio 3.
+
+1 - Todo lenguaje de programación consta de elementos específicos que permiten realizar las operaciones básicas de la programación: tipos de datos, operadores e instrucciones o sentencias. Algunos ejemplos son: char, byte, short, int, long, float, double, boolean.
+
+2 - Un int es un número (tipo primitivo), y un Integer es un puntero que hace referencia a una clase que contiene un número entero.
+
+3 - El default de int es 0 y el default de Integer es null (no hay ninguna referencia a una clase que contenga un int).
+
+4 - Pasa lo mismo que en el punto anterior, por defecto los métodos retornan esos mismos valores.

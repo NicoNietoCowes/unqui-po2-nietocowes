@@ -1,0 +1,20 @@
+Punto 1 - Actividad de Lectura
+
+1. Las interfaces en Java implican que todas las clases que se encuentran relacionadas a ellas provean un método definido en la propia interfaz. Es responsabilidad de cada clase determinar el comportamiento de ese método, pero si o si se vuelve una clase polimorfica con respecto a otras que también se implementan de la interfaz.
+
+2. Hay casos en los que las clases que preciso que sean polimorficas no siempre tienen el mismo tipo, por lo tanto se vuelve complejo agruparlas. Es por eso que puede ser util recurrir a las interfaces.
+
+3. Las clases abstractas permiten definir métodos en comun para las subclases, esto también ocurre en las interfaces pero con la diferencia de que en estas ultimas las subclases se encuentran condicionadas a implementar todos los metodos definidos en el cuerpo de la interfaz, dado que de no ser asi el programa no compila. En ese sentido se pierde la abstraccion en ciertos métodos que la clase abstracta puede resolver sin problemas.
+
+4. La interfaz actúa como un puente entre una clase superior y otras subclases que se encuentran por debajo de su nivel, pero no necesariamente se instancian, sino que se accede a las subclases a través de ella.
+
+5. Si bien se respondio parcialmente en el punto 3, no es del todo recomendable incrementar o modificar la interfaz porque esto requiere que todas las subclases sean modificadas.
+
+6. Tanto Smalltalk como Wollok son lenguajes no tipados, por lo que basta con hacer polimorficas ciertas clases que puedan compartir algún método especifico para poder procesar o acceder a estas sin problemas. 
+
+-----------------------------------
+
+Punto 4 - Interfaces, Colecciones y otras yerbas
+
+Si se utilizaran clases especificas para los métodos de la clase ColeccionadorDeObjetos se podría trabajar con colecciones de un tipo concreto (la propia clase que se quiera utilizar). Con las interfaces pasa algo similar pero con un nivel de abstracción mayor, ya que se pueden acceder a colecciones de esa interfaz, que no necesariamente implica un único tipo (pueden ser varias clases polimorficas entre si).
+

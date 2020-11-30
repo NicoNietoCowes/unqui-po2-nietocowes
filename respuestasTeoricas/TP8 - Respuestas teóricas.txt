@@ -1,0 +1,18 @@
+TDD y Test de Unidad:
+
+1 - Se trata de hacer hincapié en determinar, para una clase específica, una serie de casos de test para distintos tipos de comportamiento que pueda presentar dicha clase. De modo tal que se puedan probar en su gran mayoria los distintos resultados que puede llegar a arrojar frente a un mensaje especifico.
+
+2 - Lo ideal sería que cuando se está testeando una clase especifica no aparezcan en los casos de test actores externos a la misma, cada clase debería tener su propia suite de tests, para garantizar que se está probando únicamente el comportamiento de esa clase. En caso de necesitarlo, pueden aparecer como agentes externos los Test Doubles o dobles de testeo, que no van a aportar comportamiento de una clase externa, sino que tienen como objetivo "rellenar" los espacios en los que la clase que se está testeando requiere si o si otra clase con la que interactuar. 
+
+3 - En este punto se necesita que todos los casos de testeo y la suite de tests en general estén respaldados por documentación clara y concisa que deje en claro que se está probando (a esto también aporta la elección de buenos nombres para los tests unitarios).
+
+Test Doubles:
+
+1 - Los test doubles o "dobles" son clases que simulan ser DOCs (Dependent on component), estos tienen las mismas cualidades y responden de la manera que necesitamos para comprobar el funcionamiento de los SUT (System under test) y las interacciones deseadas. Acelera la ejecución de los test. Estimula condiciones que resultan difíciles de instanciar o crear y permite gran desarrollo de tests unitarios.
+
+2 - Hay varios tipos de test doubles:
+• Dummy: solo ocupa un lugar, se lo utiliza como objeto de relleno (Un caso de uso con Mockito podría ser cuando necesito
+llenar un método con un parámetro que requiere una clase específica y solo creo el double).
+• Stub: es aquel que tiene valores de retorno hardcodeados para cumplir con alguna expectativa del SUT. (Mockito: cuando creo el double y le indico que debe responder determinado método)
+• Mock: son Stubs pero con la capacidad de poder verificarlos (Mockito: igual que stub pero con la sentencia verify de algún método específico). 
+• Spy: es un Mock pero que llama a los métodos del objeto real (Mockito: se puede verificar como el Mock y se configura como el Stub pero en vez de hardcodear la respuesta se llama al método real).
